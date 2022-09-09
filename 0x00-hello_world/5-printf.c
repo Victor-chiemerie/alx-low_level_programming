@@ -2,7 +2,7 @@
 /**
   * main - Entry point
   *
-  * Return : 0 to show the end of the function
+  * Return: 0 to show the end of the function
   */
 int main(void)
 {
