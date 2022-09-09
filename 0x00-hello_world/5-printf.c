@@ -2,8 +2,8 @@
 /**
   * main - Entry point
   *
-  * Return : 0
-  * Return : Always 0
+  * 
+  * Return : Description of the return value
   */
 int main(void)
 {
