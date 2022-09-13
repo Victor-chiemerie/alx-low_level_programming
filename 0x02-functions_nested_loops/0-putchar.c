@@ -6,11 +6,14 @@
  */
 int main (void)
 {
-  char[8] ch = "_putchar";
-  for(int i=0; i<ch.length; i++)
-    {
-       _putchar(ch[i]);
-    }
-  putchar("\n");
+      _putchar('_');
+      _putchar('p');
+      _putchar('u'  );
+      _putchar('t'  );
+      _putchar('c'  );
+      _putchar('h'  );
+      _putchar('a'  );
+      _putchar('r'  );
+      putchar("\n");
   return (0);
 }
