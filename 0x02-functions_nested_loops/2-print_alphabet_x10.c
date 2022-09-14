@@ -10,7 +10,8 @@ int j;
 for (j=0; j<10; j++)
   {
     char ch = 'a';
-    for(int i = 0; i<26; i++){
+    int i;
+    for(i = 0; i<26; i++){
       _putchar(ch + i);
     }    
     _putchar('\n');
