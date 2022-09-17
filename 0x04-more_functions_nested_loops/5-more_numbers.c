@@ -5,23 +5,25 @@
  * Return: there is no return value
  */
 void more_numbers(void) {
-    int k;
+int k;
+    int j;
+    int i;
+    int z;
     for (k = 0; k < 10; k++)
     {
-        int j = 48;
-    int i;
-    int z = 48;
-        for(i=48; i<63; i++){
-        if(i>=58){
+        j = 48;
+        z = 48;
+        for(i=0; i<=14; i++){
+        if(i>9){
             z = 49;
         }
-        putchar(z); 
+        _putchar(z); 
         z++;
-        if(i>=58){
-            putchar(j);
+        if(i>9){
+            _putchar(j);
             j++;
         }
     }
-    putchar('\n');
+    _putchar('\n');
     }
 }
