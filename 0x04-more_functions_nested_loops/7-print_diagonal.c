@@ -2,7 +2,7 @@
 /**
  * print_diagonal - prints a diagonal line as output, the length of the line is determined by the input given
  *
- *Return: there is no return value
+ * Return: there is no return value
  */
 void print_diagonal(int n){
     if(n>0){

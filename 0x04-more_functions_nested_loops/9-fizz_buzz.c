@@ -4,7 +4,7 @@
  *
  * Return: there is no return value
  */
-void main(void){
+int main(void){
     int i;
     for(i=1; i<=100; i++){
         if((i%15)==0){
@@ -19,4 +19,5 @@ void main(void){
         else printf("%d ",i);
     }
     printf("\n");
+    return (0);
 }
