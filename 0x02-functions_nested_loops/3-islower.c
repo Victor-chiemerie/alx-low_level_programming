@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_islower - checks if a value is lower case or mot
+ * _islower - checks if a value is lower case or mot
  *
- *Return: 1 if true but returns 0 if false
+ * Return: 1 if true but returns 0 if false
  */
 
 int _islower(int c){
