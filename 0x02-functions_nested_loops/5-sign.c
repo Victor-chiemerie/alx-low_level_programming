@@ -5,12 +5,11 @@
  * Return: there is no return value
  */
 int print_sign(int n){
-    int c = 12;
-    if ((c>0))
+    if ((n>0))
     {
         _putchar('+'); 
     }
-    else if(c<0)
+    else if(n<0)
     {
         _putchar('-');
     }
