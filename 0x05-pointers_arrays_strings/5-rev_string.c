@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
  * rev_string - reverses the value of string using pointer address
@@ -7,17 +8,17 @@
  */
 void rev_string(char *s)
 {
-  int i;
-  int j;
-  int k;
-  int n = strlen(s);
-  char a[n];
-  for(i = n - 1, j = 0; i >= 0; i--, j++)
+    int i;
+    int j;
+    int k;
+    int n = strlen(s);
+    int half = n/2;
+    j = n - 1;
+    for ( i = 0; i < half; i++)
     {
-      a[j] = s[i];
-    }
-  for (k = 0; k < n; k++)
-    {
-      *(s + k) = a[k];
+        k = *(s + i);
+        *(s + i) = *(s + j);
+        *(s + j) = k;
+        j--;
     }
 }
