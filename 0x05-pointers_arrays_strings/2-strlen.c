@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strlen - changes the value of the pointer parameter
  * @s: the String parameter
