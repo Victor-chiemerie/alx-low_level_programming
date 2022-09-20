@@ -32,7 +32,7 @@ int _atoi(char *s)
         {
             multiply = 1;
             result = 0;
-	    sign = 1
+	    sign = 1;
         }
     }
     result *= sign;
