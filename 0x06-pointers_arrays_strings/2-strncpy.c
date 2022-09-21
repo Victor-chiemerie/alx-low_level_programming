@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * _strncpy - concancates the value of the second string to the first string
- * @dest: the String pointer parameter
+ * @dest: the first String pointer parameter
  * @src: the second String pointer parameter
  * @n: the number of characters of the second parameter that should be added parameter
  *

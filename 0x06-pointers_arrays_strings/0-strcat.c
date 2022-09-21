@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * _strcat - concancates the value of the second string to the first string
- * @dest: the String pointer parameter
- * @src: the String pointer parameter
+ * @dest: the first String pointer parameter
+ * @src: the second String pointer parameter
  *
  * Return: the new string
  */
