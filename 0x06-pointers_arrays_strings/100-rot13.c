@@ -1,29 +1,28 @@
 #include "main.h"
-#include <string.h>
 /**
- * rot13 - converts some alphabets in a string to the opposite character when the alphabets are divided into 2
- * @s: the string to be converted
- * 
- * Return: the converted string
+ * rot13 - encrypts code
+ * @s: string to encrypt
+ * Return: char value
  */
-char *rot13(char * s)
+char *rot13(char *s)
 {
-    int n = strlen(s);
-    int i;
-    for ( i = 0; i < n; i++)
-    {
-        while (((*(s + i) > 64) & (*(s + i) < 91)) || ((*(s + i) > 96) & (*(s + i) < 123)))
-        {
-            if (((*(s + i) > 64) & (*(s + i) <= 77)) || ((*(s + i) > 96) & (*(s + i) <= 109)))
-            {
-                *(s + i) = *(s + i) + 13;
-            }
-            else
-            {
-                *(s + i) = *(s + i) - 13;
-            }
-            break;
-        }
-    }
-    return s;
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	int i;
+	int j = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+
+		for (j = 0; part1[j] != '\0'; j++)
+		{
+			if (s[i] == part1[j])
+			{
+				s[i] = part2[j];
+				break;
+			}
+		}
+	}
+	return (s);
 }
