@@ -14,12 +14,12 @@ char *_strncat(char *dest, char *src, int n)
     int i;
     for ( i = 0; i < n; i++)
     {
-        if((*(dest + x) < 0) | (*(dest + x) > 126))
+        if ((*(dest + x) < 0) | (*(dest + x) > 126))
         {
             break;
         }
         *(dest + x) = src[i];
         x++;
     }
-    return dest;
+    return (dest);
 }

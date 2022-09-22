@@ -1,24 +1,22 @@
 #include "main.h"
-#include <string.h>
 /**
- * _strncpy - concancates the value of the second string to the first string
- * @dest: the first String pointer parameter
- * @src: the second String pointer parameter
- * @n: the number of characters of the second parameter that should be added parameter
- *
- * Return: the new string
+ * _strncpy - copies a string
+ * @dest: destination to copy
+ * @src: source to copy
+ * @n: amount of places to copy
+ * Return: value of dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-    int x = strlen(dest);
-    int i;
-    for ( i = 0; i < n; i++)
-    {
-        if((*(dest + x) < 0) | (*(dest + x) > 126))
-        {
-            break;
-        }
-        *(dest + i) = src[i];
-    }
-    return dest;
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	for (; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }
