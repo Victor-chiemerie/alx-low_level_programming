@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strchr - finds the first occurrence of a character in s that is not contained in the set of characters that is specified by accept
+ * _strspn - the first occurrence of a character in s that is not contained in the set of characters that is specified by accept  
  * @s: the string to be searched
  * @accept: the string that is being searched for
  *
