@@ -1,31 +1,68 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
 /**
- * main - a program that prints the minimum number of coins to make change for an amount of money
+ * main - prints the min num of coins to make change for an amount of money
+ *
  * @argc: argument count
  * @argv: argument vector
- * 
- * Return: always 0
+ * Return: int
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-  int i;
-  int result;
-  int j;
-   if (argc == 2)
+  unsigned int count = 0;
+
+  if (argc != 2)
     {
-      if ( atoi(argv[1]) < 25)
-	{
-	  printf("%d\n", 1);
-	  return (0);
-	}
-      i = atoi(argv[1]) / 25;
-      j = atoi(argv[1]) % 25;
-      result = i + j;
-      printf("%d\n", result);
+      printf("Error\n");
+      return (1);
+    }
+  else if (atoi(argv[1]) < 0)
+    {
+      printf("%d\n", 0);
       return (0);
     }
-  else
-    printf("Error\n");
-  return (1);
+  count = coin_count(count, atoi(argv[1]));
+  printf("%d\n", count);
+  return (0);
+}
+
+/**
+ * coin_count - counts the min coins needed for change
+ *
+ * @count: int to count coins
+ * @num: argv[1] changed to int
+ * Return: int
+ */
+unsigned int coin_count(unsigned int count, int num)
+{
+  unsigned int sum = 0;
+
+  while (!(sum + 25 > (unsigned int)num))
+    {
+      sum += 25;
+      count++;
+    }
+  while (!(sum + 10 > (unsigned int)num))
+    {
+      sum += 10;
+      count++;
+    }
+  while (!(sum + 5 > (unsigned int)num))
+    {
+      sum += 5;
+      count++;
+    }
+  while (!(sum + 2 > (unsigned int)num))
+    {
+      sum += 2;
+      count++;
+    }
+  while (!(sum + 1 > (unsigned int)num))
+    {
+      sum += 1;
+      count++;
+    }
+  return (count);
 }
