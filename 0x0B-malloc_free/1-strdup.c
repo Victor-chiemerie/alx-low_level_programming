@@ -19,7 +19,7 @@ return (NULL);
 do {
 n++;
 } while (*(str + n));
- ch = malloc((n + 1) * (sizeof(char)));
+ch = malloc((n + 1) * (sizeof(char)));
 if  (ch == NULL)
 {
 return (NULL);
