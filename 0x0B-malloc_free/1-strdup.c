@@ -19,7 +19,11 @@ return (NULL);
 do {
 n++;
 } while (*(str + n));
-ch = malloc(n * (sizeof(char)));
+ ch = malloc((n + 1) * (sizeof(char)));
+if  (ch == NULL)
+{
+return (NULL);
+}
 for (j = 0; *(str + j); j++)
 {
 *(ch + j) = *(str + j);
