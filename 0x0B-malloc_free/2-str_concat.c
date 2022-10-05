@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - concancates two strings
+ * str_concat - concancates two strings
  * @s1: the first string to be concancated
  * @s2: the second string to be concancated
- * 
+ *
  * Return: a pointer to the string or NULL if str is NULL
  */
 char *str_concat(char *s1, char *s2)
