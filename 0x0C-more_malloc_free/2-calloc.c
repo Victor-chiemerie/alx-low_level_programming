@@ -18,7 +18,7 @@ if ((nmemb < 1) | (size < 1))
 {
 return (NULL);
 }
-array = malloc(nmemb * size);
+array = (char *)malloc(nmemb * size);
 if (array == 0)
 {
 return (NULL);
