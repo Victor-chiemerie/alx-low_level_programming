@@ -23,7 +23,7 @@ if (num == 0)
 {
 return (NULL);
 }
-for ( i = 0; i < range; i++)
+for (i = 0; i < range; i++)
 {
 *(num + i) = min;
 min++;
