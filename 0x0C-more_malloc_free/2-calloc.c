@@ -18,7 +18,7 @@ if ((nmemb == 0) | (size == 0))
 {
 return (NULL);
 }
-array = (char *)malloc(nmemb * size);
+ array = (char *)malloc((nmemb * size) + 1);
 if (array == 0)
 {
 return (NULL);
@@ -28,5 +28,6 @@ while (*(array + i))
 *(array + i) = 0;
 i++;
 }
+ *(array + i) = '\0';
 return (array);
 }
