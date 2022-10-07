@@ -16,16 +16,15 @@ if ((nmemb == 0) || (size == 0))
 {
 return (NULL);
 }
-array = malloc((nmemb * size) + 1);
+array = malloc(nmemb * size);
 if (array == 0)
 {
 return (NULL);
 }
-while (i < nmemb)
+while (i < (nmemb * size))
 {
 *(array + i) = 0;
 i++;
 }
-*(array + i) = '\0';
 return (array);
 }
