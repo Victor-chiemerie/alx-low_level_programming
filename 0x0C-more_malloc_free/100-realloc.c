@@ -27,16 +27,16 @@ if (old_size < new_size)
 {
 my_size = old_size;
 }
- else
+else
 {
- my_size = new_size;
+my_size = new_size;
 }
 new_memory = malloc(new_size);
 if (new_memory == NULL)
 {
 return (NULL);
 }
-while ((i < my_size) & (ptr != NULL))
+while ((i < my_size) &(ptr != NULL))
 {
 *(new_memory + i) = *((char *)ptr + i);
 i++;
