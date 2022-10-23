@@ -15,6 +15,6 @@ main:
 	leave
 	ret
 
-section	.data
+section	.rodata
 msg:
 	db "Hello, Holberton",10,0
